@@ -7,11 +7,17 @@ h1 {
   text-align: center;
   color: beige;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
 #content {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 65vh;
 }
 
 table {
@@ -25,7 +31,13 @@ td {
   vertical-align: middle;
   font-size: 24px;
   border: 5px solid white;
+  cursor: pointer;
 }
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 tr:first-child td {
   border-top: none; /* Entfernen Sie die obere Border für die erste Reihe */
 }
@@ -40,10 +52,6 @@ td:first-child {
 
 td:last-child {
   border-right: none; /* Entfernen Sie die rechte Border für die letzte Zelle in jeder Reihe */
-}
-svg {
-  width: 72px;
-  height: 72px;
 }
 
 path {
@@ -80,4 +88,26 @@ line {
   100% {
     transform: scale(1);
   }
+}
+
+button {
+  background-color: #4caf50; /* Grün */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  background-color: white;
+  color: #4caf50;
+  border-color: #4caf50;
 }
