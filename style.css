@@ -1,0 +1,83 @@
+body {
+  background-color: #323232;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  color: beige;
+}
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24px;
+  border: 5px solid white;
+}
+tr:first-child td {
+  border-top: none; /* Entfernen Sie die obere Border für die erste Reihe */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Entfernen Sie die untere Border für die letzte Reihe */
+}
+
+td:first-child {
+  border-left: none; /* Entfernen Sie die linke Border für die erste Zelle in jeder Reihe */
+}
+
+td:last-child {
+  border-right: none; /* Entfernen Sie die rechte Border für die letzte Zelle in jeder Reihe */
+}
+svg {
+  width: 72px;
+  height: 72px;
+}
+
+path {
+  fill: none;
+  stroke: blue;
+  stroke-width: 10;
+  animation: dash 1s forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+  100% {
+    stroke-dasharray: 100 0;
+  }
+}
+
+svg {
+  width: 72px;
+  height: 72px;
+}
+
+line {
+  stroke: yellow;
+  stroke-width: 10;
+  animation: scale 1s forwards;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
